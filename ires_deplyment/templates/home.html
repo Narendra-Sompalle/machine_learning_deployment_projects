@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            ireas</title>
+    </head>
+    <body>
+        <!-- create a forms for getting input from the user  -->
+        <!-- first we have to see howmany features we have to predict out model -->
+        <form action="/predict" method="POST">
+		<div class="container text-center">
+            <!-- first of all we have to check the order -->
+			<center>
+            <input type="text" name="spl" placeholder="sepal length (cm)"><br>
+            <input type="text" name="spw" placeholder="sepal width (cm)"><br>
+            <input type="text" name="ptl" placeholder="petal length (cm)"><br>
+            <input type="text" name="ptw" placeholder="petal width (cm)"><br>
+			<br><br>
+            <!-- now we create a button -->
+			<button class="btn btn-success"> predict</button>
+			</center>
+		</div>
+		</form>
+		<div class="row">
+		{% if p %}
+		<h2 class="text-warning">{{p}}</h2>
+		{% endif %}
+		</div>
+			
+			
+        
+    </body>
+</html>
