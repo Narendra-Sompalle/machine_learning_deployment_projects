@@ -1,1 +1,1 @@
-# airline_ticket_prediction
+# Narendra Machine Learning deployments projects
